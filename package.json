@@ -4,6 +4,7 @@
   "description": "An example of how to wrap react components for consumption in non-react websites using webpack",
   "main": "wrapper.js",
   "scripts": {
+    "example": "node server.js",
     "bundle-js-dev": "webpack --config ./webpack.dev.config.js",
     "bundle-js-prod": "webpack -p --config ./webpack.prod.config.js",
     "bundle-js": "npm run test && npm run bundle-js-dev && npm run bundle-js-prod"
@@ -30,6 +31,7 @@
     "babel-preset-stage-2": "^6.5.0",
     "babel-runtime": "^6.5.0",
     "chat-template": "0.0.21",
+    "express": "^4.13.4",
     "react": "^15.0.1",
     "react-dom": "^15.0.0",
     "webpack": "^1.13.0"

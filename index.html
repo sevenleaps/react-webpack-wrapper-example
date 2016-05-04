@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/">
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>react-webpack-wrapper-example</title>
+    <script src="/builds/chat-template.js" type="text/javascript"></script>
+    <script>
+      var messages = [
+        {
+          message: 'Hey how are you keeping?',
+          inbound: true,
+          backColor: 'white',
+          duration: 1500,
+        },
+        {
+          type: 'typing',
+          duration: 500,
+          inbound: true,
+        },
+        {
+          message: 'I have not seen you in ages!!!!',
+          inbound: true,
+          backColor: 'white',
+          duration: 1700,
+        },
+        {
+          type: 'typing',
+          duration: 1000,
+          inbound: false,
+        },
+        {
+          message: 'How do I uninstall this messaging app?',
+          inbound: false,
+          backColor: 'rgb(218, 211, 232)',
+          duration: 2500,
+        }
+      ];
+
+      function initialise(){
+        showChatTemplate(messages, document.getElementById("content"));
+      }
+    </script>
+  </head>
+
+
+  <body onload="initialise()">
+    <h1>react-webpack-wrapper-example</h1>
+    <div style="max-width: 600px" id="content" />
+  </body>
+</html>
